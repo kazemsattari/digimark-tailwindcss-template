@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Vazir";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Vazir.eot");
+    src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+      /* IE6-8 */ url("../fonts/Vazir.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("../fonts/Vazir.woff") format("woff"),
+      /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/Vazir.ttf")
+        format("truetype");
+  }
+
+  @font-face {
+    font-family: "Vazir-FD";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Vazir-FD.eot");
+    src: url("../fonts/Vazir-FD.eot?#iefix") format("embedded-opentype"),
+      /* IE6-8 */ url("../fonts/Vazir-FD.woff2") format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/ url("../fonts/Vazir-FD.woff")
+        format("woff"),
+      /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/Vazir-FD.ttf")
+        format("truetype");
+  }
+}
+
+@layer utilities {
+  .box-shadow-custome::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px -22px 20px -7px #fff;
+  }
+
+  body {
+    direction: rtl;
+  }
+}
